@@ -1,9 +1,9 @@
-require("../models/CitaReparaciones")
+require("../models/CitaReparaciones.js")
 
 const mongoose = require("mongoose")
 const utils = require("../handlers/utils")
 
-const Maintenance = mongoose.model("CitaReparaciones");
+const Maintenance = mongoose.model("CitaReparaciones.js");
 
 mongoose.set("useFindAndModify", false);
 
