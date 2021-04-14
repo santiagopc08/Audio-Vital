@@ -15,7 +15,7 @@ db.then(() => {
 	console.log("Se ha conectado a la base de datos");
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
 	console.log(`Our app is running on port ${ PORT }`);
 });
 //
