@@ -25,9 +25,8 @@ exports.crearCita = (req, res) => {
                 if (citas.length > 0) {
                     res.status(200).send({ message: 'No hay cita disponible a esa hora' })
                 } else {
-                    cita.save((err, cita) => {
+                    cita.save(() => {
                         res.status(200).send({message: 'Cita creada exitosamente'})
-                        //utils.show(res, err, cita)
                     })
                 }
             })
