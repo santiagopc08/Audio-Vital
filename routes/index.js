@@ -8,7 +8,6 @@ const citasRoutes = require("./citasRoutes")
 const router = express.Router();
 
 router.use("/", pacienteRoutes);
-router.use("/", maintenanceRoutes);
 router.use("/", citasRoutes);
 //
 module.exports = router;
