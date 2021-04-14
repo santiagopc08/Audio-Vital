@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const routes = require("./routes/index");
 const db = require("./db/db");
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.use(cors({ origin: "*" }));
@@ -15,11 +15,8 @@ db.then(() => {
 	console.log("Se ha conectado a la base de datos");
 });
 
-app.set("port", process.env.PORT || 3000);
-
-const server = app.listen(app.get("port"), () => {
-	console.log("El servidor está en:");
-	console.log("http://localhost:" + server.address().port);
+app.listen(PORT, () => {
+	console.log(`Our app is running on port ${ PORT }`);
 });
 //
 module.exports = app
