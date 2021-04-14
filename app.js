@@ -9,6 +9,7 @@ const app = express();
 app.use(cors({ origin: "*" }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use("/", routes);
 
 db.then(() => {
 	console.log("Se ha conectado a la base de datos");
