@@ -1,5 +1,5 @@
 {
-  "name": "Backend",
+  "name": "audio_vital",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "mongoose": "^5.12.3"
+  }
 }
