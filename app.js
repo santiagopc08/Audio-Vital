@@ -15,7 +15,9 @@ db.then(() => {
 	console.log("Se ha conectado a la base de datos");
 });
 
-const server = app.listen(port, () => {
+app.set("port", process.env.PORT || 3000);
+
+const server = app.listen(app.get("port"), () => {
 	console.log("El servidor está en:");
 	console.log("http://localhost:" + server.address().port);
 });
