@@ -1,5 +1,5 @@
 const express = require('express')
-const maintenance = require('../controllers/maintenanceController')
+const maintenance = require('../Controllers/maintenanceController')
 const router = express.Router()
 
 //GET
