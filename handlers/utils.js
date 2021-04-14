@@ -14,6 +14,7 @@ exports.error = function (res, err) {
         description: err
     })
 }
+//
 exports.nada = function (res, message) {
     res.status(404).send({
         message: message,

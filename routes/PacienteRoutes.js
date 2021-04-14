@@ -14,7 +14,7 @@ router.post('/pacientes/cambioTelefono/', paciente.cambioTelefono)
 
 //delete
 router.delete('/pacientes/gestion/eliminar/:id', paciente.ElminarPaciente)
-
+//
 
     
 

@@ -24,7 +24,7 @@ exports.traerPacientes = (req, res) => {
 	});
 };
 
-
+//
 
 exports.traerPacientePorCedula = (req, res) => {
 	let cedulaP = req.params.id;

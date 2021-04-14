@@ -15,6 +15,7 @@ const CitaClinica = new Schema(
 		collection: "cita_clinica",
 		toJSON: { virtuals: true },
 	}
+	//
 );
 
 module.exports = mongoose.model("CitaClinica", CitaClinica);
